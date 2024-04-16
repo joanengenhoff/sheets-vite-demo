@@ -38,4 +38,17 @@ univer.registerPlugin(UniverSheetsUIPlugin);
 univer.registerPlugin(UniverSheetsFormulaPlugin);
 
 // create univer sheet instance
-univer.createUniverSheet({});
+univer.createUniverSheet({
+  sheets: {
+    'sheet-01': {
+      id: 'sheet-01',
+      cellData: {
+        0: {
+          0: {
+            v: "Hello World!",
+          },
+        },
+      },
+    }
+  }
+});
